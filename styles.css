@@ -16,3 +16,7 @@
     height: calc(var(--maxwidth)/sqrt(var(--gridSize)));
     border: 1px solid black;
 }
+
+.hovered {
+    background-color: black;
+}

@@ -13,4 +13,11 @@ for (let i = 0; i < gridSize; i++) {
     let newDiv = document.createElement("div");
     newDiv.className = "square";
     container.append(newDiv);
+
+    newDiv.addEventListener("mouseover", () => {
+        newDiv.classList.add("hovered");
+    });
+
 }
+
+
