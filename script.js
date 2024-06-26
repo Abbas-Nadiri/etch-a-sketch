@@ -29,9 +29,7 @@ function createGrid(size) {
 
 createGrid(gridSize);
 
-let button = document.createElement("button");
-button.textContent = "Reset/Change grid size";
-body.append(button);
+let button = document.querySelector("button");
 
 button.addEventListener("click", () => {
 let newGridSize = prompt("Enter new grid size:") ** 2
@@ -43,7 +41,7 @@ let newGridSize = prompt("Enter new grid size:") ** 2
     } else if (isNaN(newGridSize)){
 
         alert("That's not a number...")
-        
+
     } else {
 
         const delet = document.getElementsByClassName("square");

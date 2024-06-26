@@ -1,19 +1,19 @@
 :root {
     --gridSize: 16;
-    --maxwidth: 500px;
+    --maxwidth: 800px;
 }
 
 #container {
     display: flex;
     flex-wrap: wrap;
-    max-width: calc(var(--maxwidth) + sqrt(var(--gridSize)) * 2px);
-    min-width: calc(var(--maxwidth) + sqrt(var(--gridSize)) * 2px);
+    max-width: var(--maxwidth);
+    min-width: var(--maxwidth);
     border: 3px solid blue;
 }
 
 .square {
-    width: calc(var(--maxwidth)/sqrt(var(--gridSize)));
-    height: calc(var(--maxwidth)/sqrt(var(--gridSize)));
+    width: calc(var(--maxwidth)/sqrt(var(--gridSize)) - 2px);
+    height: calc(var(--maxwidth)/sqrt(var(--gridSize)) - 2px);
     border: 1px solid black;
 }
 
